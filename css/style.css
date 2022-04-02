@@ -9,9 +9,9 @@ header, footer, section, aside, nav, article {
 }
 
 body {
-    margin: 0 auto;
-    padding: 22px 0;
-    width: 940px;
+    /*margin: 0 auto;*/
+    /*padding: 22px 0;*/
+    /*width: 940px;*/
     font: 13px/22px Helvetica, Arial, sans-serif;
     background: #F0F0F0;
 }
@@ -44,7 +44,7 @@ nav {
 
 nav ul {
     margin: 0 auto;
-    width: 940px;
+    /*width: 940px;*/
     list-style: none;
 }
 
@@ -73,7 +73,7 @@ nav ul li.selected a {
 
 nav ul li.subscribe a {
     margin-left: 22px;
-    padding-left: 33px;
+    /*padding-left: 33px;*/
     text-align: left;
     background: url("../images/rss.png") left center no-repeat;
 }
