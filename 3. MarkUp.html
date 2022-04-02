@@ -14,30 +14,56 @@
         The Flower Blog
     </h1>
 </header>
-<nav>
-    <ul>
-        <li class="selected"><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Archives</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="subscribe"><a href="#">Subscribe via. RSS</a></li>
-    </ul>
-</nav>
-<div class="container">
-    <section id="intro">
-        <header>
-            <h2>
-                Do you love flowers as much as we do?</h2>
-        </header>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut.</p>
-        <img src="images/intro_flower.png" alt="Flower"/>
-    </section>
 
-    <div id="content">
-        <div id="mainContent"><!--role='main'-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Archives</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="subscribe">
+                    <a class="nav-link" href="#">Subscribe via. RSS</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+      </span>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <section id="intro" class="col-12">
+            <header>
+                <h2>
+                    Do you love flowers as much as we do?</h2>
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut.</p>
+            <img src="images/intro_flower.png" alt="Flower"/>
+        </section>
+    </div>
+
+
+    <div id="content" class="row">
+        <div id="mainContent" class="col-lg-10 col-md-12 col-sm-12"><!--role='main'-->
             <section>
                 <article class="blogPost">
                     <header>
@@ -146,7 +172,7 @@
                     <input type="submit" value="Post comment"/></p>
             </form>
         </div>
-        <aside>
+        <aside class="col-lg-2 col-md-12 col-sm-12">
             <section>
                 <header>
                     <h3>
@@ -180,50 +206,56 @@
 
 
 </div>
-<footer>
-    <div>
-        <section id="about">
-            <header>
-                <h3>
-                    About</h3>
-            </header>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section id="blogroll">
-            <header>
-                <h3>
-                    Blogroll</h3>
-            </header>
-            <ul>
-                <li><a href="#">NETTUTS+</a></li>
-                <li><a href="#">FreelanceSwitch</a></li>
-                <li><a href="#">In The Woods</a></li>
-                <li><a href="#">Netsetter</a></li>
-                <li><a href="#">PSDTUTS+</a></li>
-            </ul>
-        </section>
-        <section id="popular">
-            <header>
-                <h3>
-                    Popular</h3>
-            </header>
-            <ul>
-                <li><a href="#">This is the title of a blog post</a></li>
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
-                <li><a href="#">Duis aute irure dolor</a></li>
-                <li><a href="#">Excepteur sint occaecat cupidatat</a></li>
-                <li><a href="#">Reprehenderit in voluptate velit</a></li>
-                <li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-            </ul>
-        </section>
+<footer class="container-fluid d-flex justify-content-center">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <section id="about">
+                <header>
+                    <h3>
+                        About</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco <a href="#">laboris nisi ut aliquip</a> ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <section id="blogroll">
+                <header>
+                    <h3>
+                        Blogroll</h3>
+                </header>
+                <ul>
+                    <li><a href="#">NETTUTS+</a></li>
+                    <li><a href="#">FreelanceSwitch</a></li>
+                    <li><a href="#">In The Woods</a></li>
+                    <li><a href="#">Netsetter</a></li>
+                    <li><a href="#">PSDTUTS+</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <section id="popular">
+                <header>
+                    <h3>
+                        Popular</h3>
+                </header>
+                <ul>
+                    <li><a href="#">This is the title of a blog post</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Consectetur adipisicing elit, sed do eiusmod</a></li>
+                    <li><a href="#">Duis aute irure dolor</a></li>
+                    <li><a href="#">Excepteur sint occaecat cupidatat</a></li>
+                    <li><a href="#">Reprehenderit in voluptate velit</a></li>
+                    <li><a href="#">Officia deserunt mollit anim id est laborum</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </section>
+        </div>
     </div>
 </footer>
 </body>

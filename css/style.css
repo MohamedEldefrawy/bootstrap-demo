@@ -9,9 +9,7 @@ header, footer, section, aside, nav, article {
 }
 
 body {
-    /*margin: 0 auto;*/
-    /*padding: 22px 0;*/
-    /*width: 940px;*/
+    min-width: 440px;
     font: 13px/22px Helvetica, Arial, sans-serif;
     background: #F0F0F0;
 }
@@ -57,7 +55,6 @@ nav ul li a {
     margin-right: 20px;
     width: 140px;
     font-size: 14px;
-    line-height: 44px;
     text-align: center;
     text-decoration: none;
     color: #777;
@@ -119,15 +116,15 @@ nav ul li.subscribe a {
 
 /*------------------------------CONTENT AREA AND SIDEBAR LAYOUT------------------------------*/
 
-#content {
-    display: table;
-}
+/*#content {*/
+/*    display: table;*/
+/*}*/
 
-#mainContent {
-    display: table-cell;
-    width: 620px;
-    padding-right: 22px;
-}
+/*#mainContent {*/
+/*    !*display: table-cell;*!*/
+/*    width: 620px;*/
+/*    padding-right: 22px;*/
+/*}*/
 
 aside {
     display: table-cell;
@@ -262,6 +259,7 @@ aside section ul li a:hover {
 
 /*------------------------------FOOTER------------------------------*/
 footer {
+    min-width: 440px;
     position: absolute;
     left: 0;
     width: 100%;
@@ -269,7 +267,6 @@ footer {
 }
 
 footer div {
-    display: table;
     margin: 0 auto;
     padding: 44px 0;
     width: 940px;
